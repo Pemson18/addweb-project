@@ -1,0 +1,7 @@
+my_custom.config:
+  path: "/admin/config/my_custom/adminsettings"
+  defaults:
+    _form: '\Drupal\my_custom\Form\CustomConfigForm'
+    _title: "Set Custom Assets"
+  requirements:
+    _permission: "administer site configuration"

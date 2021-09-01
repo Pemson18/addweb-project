@@ -1,0 +1,10 @@
+<?php
+/**
+ * Implements hook_preprocess_html().
+ */
+function my_custom_preprocess_html(&$variables) { 
+  
+  $variables['paths'] =
+  \Drupal::config('my_custom.customconfig')->get('paths');
+
+  }

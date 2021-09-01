@@ -1,0 +1,6 @@
+my_custom.config:
+  title: "Add Custom Assets"
+  route_name: my_custom.config
+  description: "My Custom Assets"
+  parent: system.admin_config_system
+  weight: 99

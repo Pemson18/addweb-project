@@ -1,0 +1,9 @@
+my_custom.default:
+  css:
+    theme:
+      css/my_custom.css: {}
+  js:
+    js/my_custom.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
