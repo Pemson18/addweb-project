@@ -3,8 +3,11 @@
  * Implements hook_preprocess_html().
  */
 function my_custom_preprocess_html(&$variables) { 
-  
-  $variables['paths'] =
-  \Drupal::config('my_custom.customconfig')->get('paths');
-  dpm($variables['paths']);
+  if(\Drupal::config('my_custom.customconfig')->get('type') === '2') {
+    $variables['paths'] =
+    \Drupal::config('my_custom.customconfig')->get('paths');
   }
+  else {
+    $variables['paths'] = '';
+  }
+}
